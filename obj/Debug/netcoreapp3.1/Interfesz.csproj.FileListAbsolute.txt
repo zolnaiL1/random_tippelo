@@ -1,0 +1,13 @@
+C:\Users\Felhasználó\source\repos\Interfesz\bin\Debug\netcoreapp3.1\Interfesz.exe
+C:\Users\Felhasználó\source\repos\Interfesz\bin\Debug\netcoreapp3.1\Interfesz.deps.json
+C:\Users\Felhasználó\source\repos\Interfesz\bin\Debug\netcoreapp3.1\Interfesz.runtimeconfig.json
+C:\Users\Felhasználó\source\repos\Interfesz\bin\Debug\netcoreapp3.1\Interfesz.runtimeconfig.dev.json
+C:\Users\Felhasználó\source\repos\Interfesz\bin\Debug\netcoreapp3.1\Interfesz.dll
+C:\Users\Felhasználó\source\repos\Interfesz\bin\Debug\netcoreapp3.1\Interfesz.pdb
+C:\Users\Felhasználó\source\repos\Interfesz\obj\Debug\netcoreapp3.1\Interfesz.csprojAssemblyReference.cache
+C:\Users\Felhasználó\source\repos\Interfesz\obj\Debug\netcoreapp3.1\Interfesz.AssemblyInfoInputs.cache
+C:\Users\Felhasználó\source\repos\Interfesz\obj\Debug\netcoreapp3.1\Interfesz.AssemblyInfo.cs
+C:\Users\Felhasználó\source\repos\Interfesz\obj\Debug\netcoreapp3.1\Interfesz.csproj.CoreCompileInputs.cache
+C:\Users\Felhasználó\source\repos\Interfesz\obj\Debug\netcoreapp3.1\Interfesz.dll
+C:\Users\Felhasználó\source\repos\Interfesz\obj\Debug\netcoreapp3.1\Interfesz.pdb
+C:\Users\Felhasználó\source\repos\Interfesz\obj\Debug\netcoreapp3.1\Interfesz.genruntimeconfig.cache

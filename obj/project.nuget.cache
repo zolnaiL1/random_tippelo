@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "hBKj8+o33MtJhgUJU2i0TF0RRiiLORgQeq/pMfcNxwf5/rPZS0wgBTlhSB3LojqwEXC0T0ifASmdvdatSZUSTg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Felhasználó\\source\\repos\\Interfesz\\Interfesz.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Felhasználó\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\Felhasználó\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.10\\microsoft.netcore.app.host.win-x64.3.1.10.nupkg.sha512"
+  ],
+  "logs": []
+}
