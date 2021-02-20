@@ -18,6 +18,7 @@ namespace Interfesz
         static void Main(string[] args)
         {
             Teszt1();
+            //asdasda
         }
     }
 }
