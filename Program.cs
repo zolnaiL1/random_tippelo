@@ -4,20 +4,23 @@ namespace Interfesz
 {
     class Program
     {
-        public static void Teszt1()
+        public static void Teszt()
         {
-            SzamKitalaloJatek teszt1 = new SzamKitalaloJatek(10, 20);
+            SzamKitalaloJatek teszt = new SzamKitalaloJatek(10, 20);
             VeletlenTippelo veletlen = new VeletlenTippelo();
             BejaroTippelo bejaro = new BejaroTippelo();
-
-            teszt1.VersenyzoFelvetele(veletlen);
-            teszt1.VersenyzoFelvetele(bejaro);
-            teszt1.Jatek();
+            LogaritmikusKereso log = new LogaritmikusKereso();            
+            
+            teszt.VersenyzoFelvetele(veletlen);
+            teszt.VersenyzoFelvetele(bejaro);
+            teszt.VersenyzoFelvetele(log);
+            
+            teszt.Statisztika(1000);
 
         }
         static void Main(string[] args)
         {
-            Teszt1();
+            Teszt();
             //asdasda
         }
     }

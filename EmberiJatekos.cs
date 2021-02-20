@@ -8,17 +8,17 @@ namespace Interfesz
     {
         public void JatekIndul(int alsoHatar, int felsoHatar)
         {
-            Console.WriteLine($"Kezdődik a határ a megadott határokkal: {alsoHatar},{felsoHatar}");
+            Console.WriteLine($"*Kezdődik a határ a megadott határokkal: {alsoHatar},{felsoHatar}");
         }
 
         public void Kisebb()
         {
-            Console.WriteLine("Az előző tippnél kisebb a keresett szám");
+            Console.WriteLine("*Az előző tippnél kisebb a keresett szám");
         }
 
         public int KovetkezoTipp()
         {           
-            Console.WriteLine("Add meg a következő tippet: ");
+            Console.Write("*Add meg a következő tippet: ");
             
             int kovetkezoTipp1;
             kovetkezoTipp1 = int.Parse(Console.ReadLine());
@@ -28,17 +28,17 @@ namespace Interfesz
 
         public void Nagyobb()
         {
-            Console.WriteLine("Az előző tippnél nagyobb a keresett szám");
+            Console.WriteLine("*Az előző tippnél nagyobb a keresett szám");
         }
 
         public void Nyert()
         {
-            Console.WriteLine("Nyertél! :)");
+            Console.WriteLine("*Nyertél! :)");
         }
 
         public void Veszitett()
         {
-            Console.WriteLine("Veszítettél! :(");
+            Console.WriteLine("*Veszítettél! :(");
         }
     }
 }

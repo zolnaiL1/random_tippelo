@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Interfesz
 {
-    abstract class GepiJatekos : ITippelo//, IStatisztikatSzolgaltat
+    abstract class GepiJatekos : ITippelo, IStatisztikatSzolgaltat
     {
         protected int alsoHatar;
         protected int felsoHatar;
@@ -32,9 +32,9 @@ namespace Interfesz
             veszitettDB++;
         }
 
-       // public int HanyszorNyert { get { return nyertDB; } }
+        public int HanyszorNyert { get { return nyertDB; } }
 
-       // public int HanyszorVesztett { get { return veszitettDB; } }
+        public int HanyszorVesztett { get { return veszitettDB; } }
 
     }
 }

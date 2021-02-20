@@ -32,7 +32,7 @@ namespace Interfesz
                 versenyzoN++;
                 ITippelo[] bovitettVersenyzok = new ITippelo[versenyzoN];
 
-                //Console.WriteLine(bovitettVersenyzok.Length);
+                
 
                 for (int i = 0; i < versenyzok.Length; i++)
                 {
@@ -48,6 +48,7 @@ namespace Interfesz
         {
             this.cel = r.Next(alsoHatar, felsoHatar);
 
+            Console.WriteLine("VersenyIndul");
             Console.WriteLine($"cel: {cel}");
 
             for (int i = 0; i < versenyzok.Length; i++)
@@ -59,21 +60,35 @@ namespace Interfesz
         public bool MindenkiTippel()
         {
             bool vanNyertes = false;
+
             Console.WriteLine("Mindenki Tippel");
             for (int i = 0; i < versenyzok.Length; i++)
             {
-                //versenyzok[i].KovetkezoTipp();
+                
+                int tipp = versenyzok[i].KovetkezoTipp();               
+                Console.WriteLine($"{versenyzok[i]} tippje: {tipp}");
 
-                int teszt1 = versenyzok[i].KovetkezoTipp();               
-                Console.WriteLine($"{versenyzok[i]} tipp: {teszt1}");
-
-                if (cel == teszt1)
+                if (cel == tipp)
                 {
                     vanNyertes = true;
                     versenyzok[i].Nyert();
                 }
                 else
                 {
+                    //mod1
+                    if (versenyzok[i] is IOkosTippelo)
+                    {
+                        IOkosTippelo aktualisJatekos = versenyzok[i] as IOkosTippelo;
+                        if (tipp < cel)
+                        {
+                            aktualisJatekos.Kisebb();
+                        }
+                        else
+                        {
+                            aktualisJatekos.Nagyobb();
+                        }
+                    }
+
                     versenyzok[i].Veszitett();
                 }
             }
@@ -87,6 +102,7 @@ namespace Interfesz
                 return false;
             }
 
+            
         }
 
         public void Jatek()
@@ -99,6 +115,23 @@ namespace Interfesz
             {              
                 
                 vanNyertes = MindenkiTippel();
+            }
+        }
+
+        public void Statisztika(int korokSzama)
+        {
+            for (int i = 0; i < korokSzama; i++)
+            {
+                Jatek();
+            }
+
+            for (int i = 0; i < versenyzok.Length; i++) //versenyzoket nezi
+            {
+                if (versenyzok[i] is IStatisztikatSzolgaltat)
+                {
+                    GepiJatekos aktualisJatekos = versenyzok[i] as GepiJatekos;
+                    Console.WriteLine($"{i+1}. játékos ({versenyzok[i]}), NY: {aktualisJatekos.HanyszorNyert}\t V: {aktualisJatekos.HanyszorVesztett}");
+                }
             }
         }
     }
